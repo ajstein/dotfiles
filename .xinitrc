@@ -51,5 +51,8 @@ emacs --daemon &
 # Start the screensaver daemon to lock the screen
 xscreensaver &
 
+# The black/white grid as background doesn't suit my taste.
+xsetroot -solid black &
+
 # Start the ratpoison window manager
 exec ratpoison
