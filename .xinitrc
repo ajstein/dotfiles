@@ -36,6 +36,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# Personal X keyboard preferences
+# lshift+rshift = toggle input language
+# capslock = becomes ctrl key
+# windows (mac command key) = becomes meta and windows key
+setxkbmap -layout us,ar -option grp:shifts_toggle,caps:ctrl_modifier,altwin:meta_win
+
 emacs --daemon &
 
 exec ratpoison
