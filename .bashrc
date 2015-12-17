@@ -5,5 +5,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+
+BASH_ALIAS_FILE=$HOME/.bash_aliases
+
+# Source bash aliases if the file exist
+if [[ -f $HOME/.bash_aliases ]] ; then
+
+    source $BASH_ALIAS_FILE
+    
+fi
+
