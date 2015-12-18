@@ -3,3 +3,6 @@
 	url = git@github.com:ajstein/prelude.git
 	branch = custom
 	
+[submodule ".local/bin"]
+	path = .local/bin
+	url = git@github.com:ajstein/bin.git
