@@ -43,7 +43,7 @@ fi
 setxkbmap -layout us,ar -option grp:shifts_toggle,caps:ctrl_modifier,altwin:meta_win
 
 # Configure rofi as needed.
-rofi -terminal 'emacsclient -c' -key-window Menu -key-run Insert -bg black -fg white -font "DejaVu Sans Mono 10" &
+rofi &
 
 # Start emacs daemon
 emacs --daemon &
