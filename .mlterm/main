@@ -1,0 +1,9 @@
+termtype=mlterm
+scrollbar_mode=none
+use_anti_alias=true
+encoding=utf8
+fontsize=12
+mod_meta_key=meta
+mod_meta_mode=esc
+fg_color=white
+bg_color=black
