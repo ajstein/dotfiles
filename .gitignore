@@ -1,0 +1,3 @@
+# Exempt mlterm challenge file generated from instance to instance for
+# authentication purposes.
+.mlterm/challenge
