@@ -14,6 +14,9 @@ if [[ -f $HOME/.bash_aliases ]] ; then
     source $BASH_ALIAS_FILE
 fi
 
+# Editor settings
+export EDITOR="emacsclient --alternate-editor=emacs"
+
 # Configure python virtualenv plumbing
 if [[ -d $HOME/.virtualenvs ]] ; then
     source $(which virtualenvwrapper.sh)
