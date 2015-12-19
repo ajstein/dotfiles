@@ -55,4 +55,4 @@ xscreensaver &
 xsetroot -solid black &
 
 # Start the ratpoison window manager
-exec ratpoison
+exec bash --login -c 'ratpoison'
