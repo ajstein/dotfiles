@@ -4,4 +4,7 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-[[ -d $HOME/.local/bin ]] && export PATH=$HOME/.local/bin:$PATH
+if [[ -d $HOME/.local/bin ]]
+then
+    export PATH=$HOME/.local/bin:${PATH}
+fi
