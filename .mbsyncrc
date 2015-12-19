@@ -1,0 +1,106 @@
+###############################
+# begin: ajs@eml.cc ###########
+###############################
+IMAPAccount imapaccount-ajs-eml-cc
+User		ajstein@fastmail.com
+PassCmd         "pass ajstein@fastmail.com"
+# Tunnel		"ssh al@vps1 -W localhost:9930"
+# RequireSSL	no
+Host            mail.messagingengine.com
+UseIMAPS        yes
+RequireSSL	yes
+UseTLSv1.2	yes
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore imapstore-ajs-eml-cc
+Account imapaccount-ajs-eml-cc
+
+MaildirStore maildirstore-ajs-eml-cc
+Path  ~/Maildir/ajs@eml.cc/
+
+Channel sync-ajs-eml-cc-inbox
+Master :imapstore-ajs-eml-cc:"INBOX"
+Slave  :maildirstore-ajs-eml-cc:Inbox
+
+Channel sync-ajs-eml-cc-archive
+Master :imapstore-ajs-eml-cc:"INBOX/Archive"
+Slave  :maildirstore-ajs-eml-cc:Archive
+
+Channel sync-ajs-eml-cc-drafts
+Master :imapstore-ajs-eml-cc:"INBOX/Drafts"
+Slave  :maildirstore-ajs-eml-cc:Drafts
+
+Channel sync-ajs-eml-cc-spam
+Master :imapstore-ajs-eml-cc:"INBOX/Junk Mail"
+Slave  :maildirstore-ajs-eml-cc:Spam
+
+Channel sync-ajs-eml-cc-trash
+Master :imapstore-ajs-eml-cc:"INBOX/Trash"
+Slave  :maildirstore-ajs-eml-cc:Trash
+
+Group ajs-eml-cc-quick
+Channel sync-ajs-eml-cc-inbox
+
+Group ajs-eml-cc-spam
+Channel sync-ajs-eml-cc-spam
+
+Group ajs-eml-cc
+Channel sync-ajs-eml-cc-inbox
+Channel sync-ajs-eml-cc-archive
+Channel sync-ajs-eml-cc-drafts
+Channel sync-ajs-eml-cc-trash
+Channel sync-ajs-eml-cc-spam
+###############################
+# end: ajs@eml.cc #############
+###############################
+
+###############################
+# begin: ajs67@georgetown.edu #
+###############################
+IMAPAccount imapaccount-ajs67-georgetown-edu
+User            ajs67@georgetown.edu
+PassCmd         "pass ajs67@georgetown.edu"
+# Tunnel	"ssh al@vps1 -W localhost:9931"
+# RequireSSL	no
+Host            imap.googlemail.com
+UseIMAPS        yes
+RequireSSL      yes
+UseTLSv1.2      yes
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore imapstore-ajs67-georgetown-edu
+Account imapaccount-ajs67-georgetown-edu
+
+MaildirStore maildirstore-ajs67-georgetown-edu
+Path ~/Maildir/ajs67@georgetown.edu/
+
+Channel sync-ajs67-georgetown-edu-inbox
+Master :imapstore-ajs67-georgetown-edu:Inbox
+Slave  :maildirstore-ajs67-georgetown-edu:Inbox
+
+Channel sync-ajs67-georgetown-edu-all-mail
+Master :imapstore-ajs67-georgetown-edu:"[Gmail]/All Mail"
+Slave  :maildirstore-ajs67-georgetown-edu:All
+
+Channel sync-ajs67-georgetown-edu-drafts
+Master :imapstore-ajs67-georgetown-edu:"[Gmail]/Drafts"
+Slave  :maildirstore-ajs67-georgetown-edu:Drafts
+
+Channel sync-ajs67-georgetown-edu-spam
+Master :imapstore-ajs67-georgetown-edu:"[Gmail]/Spam"
+Slave  :maildirstore-ajs67-georgetown-edu:Spam
+
+Group ajs67-georgetown-edu-quick
+Channel sync-ajs67-georgetown-edu-inbox
+
+Group ajs67-georgetown-edu-spam
+Channel sync-ajs67-georgetown-edu-spam
+
+Group ajs67-georgetown-edu
+Channel sync-ajs67-georgetown-edu-inbox
+Channel sync-ajs67-georgetown-edu-all-mail
+Channel sync-ajs67-georgetown-edu-drafts
+Channel sync-ajs67-georgetown-edu-spam
+###############################
+# end: ajs67@georgetown.edu ###  
+###############################
