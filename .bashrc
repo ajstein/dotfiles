@@ -7,6 +7,10 @@
 
 PS1='[\u@\h \W]\$ '
 
+# Ensure you cannot kill shell with Ctrl-D
+IGNOREEOF=10
+set -o ignoreeof
+
 BASH_ALIAS_FILE=$HOME/.bash_aliases
 
 # Source bash aliases if the file exist
