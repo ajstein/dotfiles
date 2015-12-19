@@ -7,11 +7,11 @@
       <Program label="Emacsclient">emacsclient -c</Program>
       <Program label="Firefox">firefox</Program>
       <Menu label="Applications">
-	<Program label="Emacsclient">emacsclient -c</Program>
-	<Program label="Emacs (no daemon)">emacs</Program>
+        <Program label="Emacsclient">emacsclient -c</Program>
+        <Program label="Emacs (no daemon)">emacs</Program>
           <Program label="Firefox">firefox</Program>
           <Program label="Chromium">chromium</Program>
-	  <Program label="dwb">dwb</Program>
+          <Program label="dwb">dwb</Program>
           <Program label="Google Chrome">google-chrome-stable</Program>
         </Menu>
         <Menu label="Utilities">
@@ -105,7 +105,7 @@
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
-    
+
     <!-- Path where icons can be found.
          IconPath can be listed multiple times to allow searching
          for icons in multiple paths.
