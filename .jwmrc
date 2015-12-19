@@ -11,8 +11,7 @@
         <Program label="Emacs (no daemon)">emacs</Program>
           <Program label="Firefox">firefox</Program>
           <Program label="Chromium">chromium</Program>
-          <Program label="dwb">dwb</Program>
-          <Program label="Google Chrome">google-chrome-stable</Program>
+          <Program label="Conkeror">conkeror</Program>
         </Menu>
         <Menu label="Utilities">
             <Program label="Fonts">xfontsel</Program>
