@@ -28,11 +28,6 @@ msgwait 3
 # window settings
 set wingravity center
 set transgravity center
-set bargravity n
-set border 0 0
-set barborder 1
-set padding 0 16 0 0
-set barpadding 1 1
 
 # font and coloring
 set font -*-dejavu sans mono-medium-r-normal-*-12-*-*-*-*-*-*-*
