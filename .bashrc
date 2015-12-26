@@ -11,6 +11,9 @@ PS1='[\u@\h \W]\$ '
 IGNOREEOF=10
 set -o ignoreeof
 
+# Ignore case with tab completion
+set completion-ignore-case on
+
 BASH_ALIAS_FILE=$HOME/.bash_aliases
 
 # Source bash aliases if the file exist
