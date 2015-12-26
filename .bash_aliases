@@ -58,4 +58,4 @@ alias vi='vim '
 
 # alias: quicker shortcut to open file with xdg-open
 alias o='mimeopen '
-
+alias open='mimeopen '
