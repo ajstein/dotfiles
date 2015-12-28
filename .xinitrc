@@ -48,6 +48,9 @@ rofi &
 # Start emacs daemon
 emacs --daemon &
 
+# Start pulseaudio for audio playback.
+pulseaudio &
+
 # Start the screensaver daemon to lock the screen
 xscreensaver -no-splash &
 
