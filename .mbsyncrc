@@ -4,13 +4,10 @@
 IMAPAccount imapaccount-ajs-eml-cc
 User		ajstein@fastmail.com
 PassCmd         "pass ajstein@fastmail.com"
-# Tunnel		"ssh al@vps1 -W localhost:9930"
-# RequireSSL	no
 Host            mail.messagingengine.com
-UseIMAPS        yes
-RequireSSL	yes
-UseTLSv1.2	yes
-CertificateFile /etc/ssl/certs/ca-certificates.crt
+SSLType         IMAPS
+SSLVersions     TLSv1.2
+SystemCertificates yes
 
 IMAPStore imapstore-ajs-eml-cc
 Account imapaccount-ajs-eml-cc
@@ -60,13 +57,10 @@ Channel sync-ajs-eml-cc-spam
 IMAPAccount imapaccount-ajs67-georgetown-edu
 User            ajs67@georgetown.edu
 PassCmd         "pass ajs67@georgetown.edu"
-# Tunnel	"ssh al@vps1 -W localhost:9931"
-# RequireSSL	no
 Host            imap.googlemail.com
-UseIMAPS        yes
-RequireSSL      yes
-UseTLSv1.2      yes
-CertificateFile /etc/ssl/certs/ca-certificates.crt
+SSLType         IMAPS   
+SSLVersions     TLSv1.2
+SystemCertificates yes
 
 IMAPStore imapstore-ajs67-georgetown-edu
 Account imapaccount-ajs67-georgetown-edu
