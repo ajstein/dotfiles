@@ -37,3 +37,5 @@ $endif
 
 # ignore case sensitivity with tab completion
 set completion-ignore-case on
+set editing-mode emacs
+set keymap emacs
