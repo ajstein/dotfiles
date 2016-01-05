@@ -21,6 +21,11 @@ if [[ -f $HOME/.bash_aliases ]] ; then
     source $BASH_ALIAS_FILE
 fi
 
+# Check for missing commands using pkgfile database if completion logi found.
+if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]] ; then
+    source /usr/share/doc/pkgfile/command-not-found.bash
+fi
+
 # Editor settings
 export EDITOR="emacsclient --alternate-editor=emacs"
 
