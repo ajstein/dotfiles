@@ -7,6 +7,10 @@
 
 PS1='[\u@\h \W]\$ '
 
+# Ignore commands prefixed with one or more spaces, and remove duplicates prior
+# insertion in history file.
+HISTCONTROL=ignoreboth
+
 # Ensure you cannot kill shell with Ctrl-D
 IGNOREEOF=10
 set -o ignoreeof
