@@ -18,7 +18,7 @@ BASH_ALIAS_FILE=$HOME/.bash_aliases
 
 # Source bash aliases if the file exist
 if [[ -f $HOME/.bash_aliases ]] ; then
-    source $BASH_ALIAS_FILE
+    source "$BASH_ALIAS_FILE"
 fi
 
 # Check for missing commands using pkgfile database if completion logi found.
