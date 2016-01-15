@@ -35,7 +35,7 @@ export EDITOR="emacsclient --alternate-editor=emacs"
 
 # Configure python virtualenv plumbing
 if [[ -d $HOME/.virtualenvs ]] ; then
-    source $(which virtualenvwrapper.sh)
+    source /usr/bin/virtualenvwrapper_lazy.sh
 fi
 
 # Automatically start X11 on virtual terminal 1
