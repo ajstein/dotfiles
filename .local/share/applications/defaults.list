@@ -1,3 +1,4 @@
 [Default Applications]
 application/pdf=zathura-usercreated-1.desktop;
 video/x-matroska=mpv.desktop;
+image/png=feh.desktop;
