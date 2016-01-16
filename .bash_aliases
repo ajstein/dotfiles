@@ -59,3 +59,7 @@ alias vi='vim '
 # alias: quicker shortcut to open file with xdg-open
 alias o='mimeopen '
 alias open='mimeopen '
+
+# autossh
+alias assh='autossh -M 0 -o "ServerAliveInterval 45" -o "ServerAliveCountMax 2" '
+
