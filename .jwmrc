@@ -153,15 +153,15 @@
     <Key key="Return">select</Key>
     <Key key="Escape">escape</Key>
 
-    <Key mask="4" key="Tab">nextstacked</Key>
-    <Key mask="4" key="F4">close</Key>
-    <Key mask="4" key="#">desktop#</Key>
-    <Key mask="4" key="F1">root:1</Key>
-    <Key mask="4" key="F2">window</Key>
-    <Key mask="4" key="F10">maximize</Key>
-    <Key mask="4" key="Right">rdesktop</Key>
-    <Key mask="4" key="Left">ldesktop</Key>
-    <Key mask="4" key="Up">udesktop</Key>
-    <Key mask="4" key="Down">ddesktop</Key>
+    <Key mask="1" key="Tab">nextstacked</Key>
+    <Key mask="1" key="F4">close</Key>
+    <Key mask="1" key="#">desktop#</Key>
+    <Key mask="1" key="F1">root:1</Key>
+    <Key mask="1" key="F2">window</Key>
+    <Key mask="1" key="F10">maximize</Key>
+    <Key mask="1" key="Right">rdesktop</Key>
+    <Key mask="1" key="Left">ldesktop</Key>
+    <Key mask="1" key="Up">udesktop</Key>
+    <Key mask="1" key="Down">ddesktop</Key>
 
 </JWM>
