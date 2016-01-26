@@ -1,4 +1,5 @@
 [Default Applications]
 application/pdf=zathura-usercreated-1.desktop;
+application/epub+zip=zathura-usercreated-1.desktop;
 video/x-matroska=mpv.desktop;
 image/png=feh.desktop;
