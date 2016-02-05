@@ -62,4 +62,4 @@ alias open='mimeopen '
 
 # autossh
 alias assh='autossh -M 0 -o "ServerAliveInterval 45" -o "ServerAliveCountMax 2" '
-
+alias ssh_unsafe='ssh -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" '
