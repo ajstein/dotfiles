@@ -1,0 +1,11 @@
+{
+ "foreign_shells": [
+  {
+   "login": true,
+   "shell": "bash"
+  },
+  {
+   "shell": "bash"
+  }
+ ]
+}
