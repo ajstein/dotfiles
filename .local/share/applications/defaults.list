@@ -5,3 +5,5 @@ video/x-matroska=mpv.desktop;
 image/png=feh.desktop;
 text/html=firefox.desktop;
 image/jpeg=feh.desktop;
+video/mp4=mpv.desktop;
+image/svg+xml=feh-usercreated-1.desktop;
