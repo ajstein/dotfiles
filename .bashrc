@@ -40,3 +40,7 @@ fi
 
 # Automatically start X11 on virtual terminal 1
 [[ -f $HOME/.xinitrc && -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx
+
+# Add config for Common Lisp shelly utility
+SHELLY_HOME=/home/al/.shelly;
+[ -s "$SHELLY_HOME/lib/shelly/init.sh" ] && . "$SHELLY_HOME/lib/shelly/init.sh"
