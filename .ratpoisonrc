@@ -21,7 +21,10 @@ bind apostrophe exec rofi_rp_winselect
 bind A-p exec rofi_passmenu
 bind A-f exec rofi_fmenu
 bind A-l exec xscreensaver-command -lock
-
+bind bracketleft prev
+bind bracketright next
+bind A-bracketleft prev
+bind A-bracketright next
 # message settings
 msgwait 3
 
