@@ -44,3 +44,7 @@ fi
 # Add config for Common Lisp shelly utility
 SHELLY_HOME=/home/al/.shelly;
 [ -s "$SHELLY_HOME/lib/shelly/init.sh" ] && . "$SHELLY_HOME/lib/shelly/init.sh"
+
+# Add config for Common Lisp CIM version manager
+CIM_HOME=/home/al/.cim;
+[ -s "$CIM_HOME/init.sh" ] && . "$CIM_HOME/init.sh"
