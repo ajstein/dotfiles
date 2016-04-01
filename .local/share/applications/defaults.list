@@ -7,3 +7,4 @@ text/html=firefox.desktop;
 image/jpeg=feh.desktop;
 video/mp4=mpv.desktop;
 image/svg+xml=feh-usercreated-1.desktop;
+text/x-texinfo=emacs.desktop;
