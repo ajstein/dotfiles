@@ -1,8 +1,8 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
-	url = git@github.com:ajstein/prelude.git
+	url = git@github.com:xee5ch/prelude.git
 	branch = custom
 	
 [submodule ".local/bin"]
 	path = .local/bin
-	url = git@github.com:ajstein/bin.git
+	url = git@github.com:xee5ch/bin.git
