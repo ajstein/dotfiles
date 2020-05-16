@@ -42,24 +42,3 @@ fi
 # windows (mac command key) = becomes meta and windows key
 setxkbmap -layout us,ar -option grp:shifts_toggle,caps:ctrl_modifier,altwin:meta_win
 
-# Since I use a tiling window manager, dupe Java Swing apps (like Android Studio)
-# as needed to render their GUIs properly.
-export _JAVA_AWT_WM_NONREPARENTING=1
-
-# Configure rofi as needed.
-rofi &
-
-# Start emacs daemon
-emacs --daemon &
-
-# Start pulseaudio for audio playback.
-pulseaudio &
-
-# Start the screensaver daemon to lock the screen
-xscreensaver -no-splash &
-
-# The black/white grid as background doesn't suit my taste.
-xsetroot -solid black &
-
-# Start the ratpoison window manager
-exec bash --login -c 'ratpoison'
